@@ -52,7 +52,7 @@ export default function Page() {
             alt="Kanye"
           />
           <h1 className="text-4xl md:text-6xl my-4 text-center">
-            Will you be my Valentine?
+            will u be my valentine?
           </h1>
           <div className="flex flex-wrap justify-center gap-2 items-center">
             <button
