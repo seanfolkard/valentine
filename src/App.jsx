@@ -1,14 +1,17 @@
 import { useState } from "react";
 import kanye from "./assets/kanye.jpg"; // Ensure the correct file extension
+import saysikern from "./assets/saysikern.jpg"; // Add the new image
 import lovesvg2 from "./assets/Love In The Air SVG Cut File.svg";
 
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
   const [yesPressed, setYesPressed] = useState(false);
+  const [showNoImage, setShowNoImage] = useState(false); // Track if we should switch images
   const yesButtonSize = noCount * 20 + 16;
 
   const handleNoClick = () => {
     setNoCount(noCount + 1);
+    setShowNoImage(true); // Change the image after clicking "No"
   };
 
   const getNoButtonText = () => {
@@ -48,8 +51,8 @@ export default function Page() {
         <>
           <img
             className="h-[230px] rounded-lg shadow-lg"
-            src={kanye} // Corrected the src
-            alt="Kanye"
+            src={showNoImage ? saysikern : kanye} // Switch the image based on state
+            alt="Reaction"
           />
           <h1 className="text-4xl md:text-6xl my-4 text-center">
             will u be my valentine?
