@@ -61,10 +61,10 @@ export default function Page() {
     <div className="overflow-hidden flex flex-col items-center justify-center pt-4 h-screen -mt-16 selection:bg-rose-600 selection:text-white text-zinc-900">
       {yesPressed ? (
         <>
-          <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
+          <img src="https://media.tenor.com/TxdA0QrHdNgAAAAj/cat-farsi-kiss.gif" />
           <div className="text-4xl md:text-6xl font-bold my-4">
             yayyyyy!!! i love you!!
-            <p>pls check ur email</p>
+            <p className="text-sm">pls check ur email</p>
           </div>
         </>
       ) : (
