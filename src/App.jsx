@@ -1,7 +1,7 @@
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
 import kanye from "./assets/kanye.jpg";
-import saysikern from "./assets/saysikern.jpg";
+import kuromi from "./assets/kuromi-icegif-12.gif";
 import lovesvg2 from "./assets/Love In The Air SVG Cut File.svg";
 
 emailjs.init('rrWGOJ6WTkmv804nY');
@@ -71,7 +71,7 @@ export default function Page() {
         <>
           <img
             className="h-[230px] rounded-lg shadow-lg"
-            src={showNoImage ? "https://www.icegif.com/wp-content/uploads/2024/07/kuromi-icegif-12.gif" : kanye}
+            src={showNoImage ? kuromi : kanye}
             alt="Reaction"
           />
           <h1 className="text-4xl md:text-6xl my-4 text-center">
