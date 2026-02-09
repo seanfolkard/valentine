@@ -64,13 +64,14 @@ export default function Page() {
           <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
           <div className="text-4xl md:text-6xl font-bold my-4">
             yayyyyy!!! i love you!!
+            <p>pls check ur email</p>
           </div>
         </>
       ) : (
         <>
           <img
             className="h-[230px] rounded-lg shadow-lg"
-            src={showNoImage ? saysikern : kanye}
+            src={showNoImage ? "https://www.icegif.com/wp-content/uploads/2024/07/kuromi-icegif-12.gif" : kanye}
             alt="Reaction"
           />
           <h1 className="text-4xl md:text-6xl my-4 text-center">
