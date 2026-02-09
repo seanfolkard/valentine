@@ -4,6 +4,8 @@ import kanye from "./assets/kanye.jpg";
 import saysikern from "./assets/saysikern.jpg";
 import lovesvg2 from "./assets/Love In The Air SVG Cut File.svg";
 
+emailjs.init('rrWGOJ6WTkmv804nY');
+
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
   const [yesPressed, setYesPressed] = useState(false);
@@ -22,7 +24,6 @@ export default function Page() {
     emailjs.send(
       "service_3nlyg2z",     // Replace with your EmailJS service ID
       "template_17uxoh3",    // Replace with your EmailJS template ID
-      "rrWGOJ6WTkmv804nY"     // Replace with your EmailJS public key
     )
     .then((response) => {
       console.log('Email sent successfully!', response.status, response.text);
