@@ -20,12 +20,9 @@ export default function Page() {
     
     // Send email
     emailjs.send(
-      service_3nlyg2z,     // Replace with your EmailJS service ID
-      template_17uxoh3,    // Replace with your EmailJS template ID
-      {
-        to_email: 'seanmichael3007@gmail.com',
-      },
-      rrWGOJ6WTkmv804nY     // Replace with your EmailJS public key
+      "service_3nlyg2z",     // Replace with your EmailJS service ID
+      "template_17uxoh3",    // Replace with your EmailJS template ID
+      "rrWGOJ6WTkmv804nY"     // Replace with your EmailJS public key
     )
     .then((response) => {
       console.log('Email sent successfully!', response.status, response.text);
